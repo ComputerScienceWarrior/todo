@@ -13,9 +13,12 @@ const Item = () => {
     //     flexDirection: "row"
     // }
     return(
-        <div className="flex flex-col">
-            <div>Item Component</div>
-            <div>X</div>
+        <div className="border-2 border-black p-10 m-5 rounded bg-red-400 font-bold">
+            <h1 className="text-2xl italic text-white underline underline-offset-4">List Item Name</h1>
+            <div className="flex flex-row justify-between"> {/* props.itemName  */}
+                <div className="float-left">Item Component</div>
+                <div className="float-right w-10 cursor-pointer" onClick={() => console.log("Closed")}>X</div>
+            </div>
         </div>
     )
 }
