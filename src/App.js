@@ -1,10 +1,10 @@
 import './App.css';
-import Item from './components/Item';
+import ItemList from './components/ItemList.jsx'
 
 function App() {
   return (
     <div className="App text-center">
-      <Item />
+      <ItemList />
     </div>
   );
 }
